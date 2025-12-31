@@ -1,0 +1,82 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#f6f6f6;}
+
+header{
+  text-align:center;
+  padding:30px;
+  background:linear-gradient(45deg,#ff0000,#ff4d4d);
+  color:white;
+  animation:fade 1s;
+}
+header h1{font-size:32px;}
+
+.menu{padding:20px;text-align:center;}
+.menu h2{color:#ff4d4d;margin-bottom:15px;}
+
+.items{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+}
+
+.card{
+  background:white;
+  padding:10px;
+  border-radius:10px;
+  box-shadow:0 5px 20px rgba(0,0,0,.2);
+  animation:pop .8s;
+}
+.card img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+  border-radius:10px;
+}
+.card h3{margin:8px 0;color:#333;}
+
+.contact{
+  margin:20px;
+  padding:20px;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+.contact input,
+.contact textarea{
+  width:100%;
+  padding:10px;
+  margin:8px 0;
+  border-radius:6px;
+  border:1px solid #777;
+}
+
+button{
+  width:100%;
+  padding:10px;
+  border:none;
+  background:#ff4d4d;
+  color:white;
+  font-size:18px;
+  border-radius:6px;
+  transition:0.4s;
+}
+
+button:hover{background:#222;}
+
+.whatsapp{
+  display:block;
+  margin-top:10px;
+  background:#25D366;
+  color:white;
+  padding:10px;
+  border-radius:8px;
+  text-decoration:none;
+  text-align:center;
+}
+
+@keyframes fade{from{opacity:0;}to{opacity:1;}}
+@keyframes pop{
+ from{transform:scale(.8);opacity:0;}
+ to{transform:scale(1);opacity:1;}
+}
